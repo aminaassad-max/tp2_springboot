@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Ajouter médicament</title>
+</head>
+
+
+<body>
+
+
+<h1>Ajouter médicament</h1>
+
+
+<form th:action="@{/admin/medicaments/save}"
+      th:object="${medicament}"
+      method="post">
+
+
+Nom :
+
+<input type="text" th:field="*{nom}">
+
+<br><br>
+
+
+Prix :
+
+<input type="number" step="0.01"
+       th:field="*{prix}">
+
+<br><br>
+
+
+Stock :
+
+<input type="number"
+       th:field="*{stock}">
+
+
+<br><br>
+
+
+<button type="submit">
+Enregistrer
+</button>
+
+
+</form>
+
+
+</body>
+
+</html>

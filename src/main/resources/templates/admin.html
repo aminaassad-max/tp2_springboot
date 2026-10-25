@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Administration</title>
+</head>
+
+<body>
+
+<h1>Tableau de bord Administrateur</h1>
+
+<p>Bienvenue Administrateur.</p>
+
+
+<h3>Gestion de la pharmacie</h3>
+
+
+<ul>
+
+    <li>
+        <a th:href="@{/admin/users}">
+            Gestion des utilisateurs
+        </a>
+    </li>
+
+
+    <li>
+        <a th:href="@{/admin/medicaments}">
+            Gestion des médicaments
+        </a>
+    </li>
+
+
+    <li>
+        <a th:href="@{/admin/stocks}">
+            Gestion des stocks
+        </a>
+    </li>
+
+</ul>
+
+
+<br>
+
+
+<a th:href="@{/home}">
+    Retour à l'accueil
+</a>
+
+
+</body>
+
+</html>
